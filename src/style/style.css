@@ -59,40 +59,62 @@
     }
 }
 .backgroundfirst{
-    background-image: url(../img/job1.jpeg);
     width: 100%;
     height: 200px;
+    padding-top: 50px;
+    /* background-color:black; */
+    background-image: url(../img/job5.jpg);
+    background-position: center;
     background-size: 150%;
-    position: relative;
-    animation: deslice 10s infinite alternate ease-in-out;
+    background-repeat: repeat-x;
+    animation: deslizar 5s infinite linear alternate;
 }
-@keyframes deslice {
+@keyframes deslizar {
     from{
-     background-position: top;   
-     background-position: left;
+        background-position: top left;
     }
     to{
-        background-position: right;
-        background-position: bottom;
+        background-position: bottom right;
     }
+    
 }
-@media (min-width:425px) {
-    .backgroundfirst{
-        height: 300px;
-    }
+.backgroundfirst .header--introduce{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: auto;
+    padding: 0px 10px 0px 10px;
 }
-.backgroundfirst .question{
-    font-size: 2rem;
-    font-weight: 800;
-    color: white;
-    font-family: 'Fredoka One', cursive;
-    text-shadow: black 2px 1px 3px;
-    width: 250px;
-    bottom: 10px;
-    left: 5px;
-    position:absolute;
+.backgroundfirst .header--introduce .title, .backgroundfirst .header--introduce .content{
+    color:  white;
+    text-shadow: black 2px 2px 2px , black -2px -2px 2px;
+    text-align: left;
+    padding-bottom: 20px;
 }
-
+.backgroundfirst .header--introduce .content{
+    font-size: 1.2rem;
+}
+.backgroundfirst .header--introduce form{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: right;
+    gap: 5px;
+}
+.backgroundfirst .header--introduce form input{
+    font-size: 1rem;
+    padding: 3px;
+    border: none ;
+    border-style: hidden;
+    border-radius: 5px;
+}
+.backgroundfirst .header--introduce form input[type="email"]{
+    font-size: .8rem;
+    width: 200px;
+}
+.backgroundfirst .header--introduce form input[type="email"]::placeholder{
+    color: black ;
+}
 .main--posts-container{
     width: 100%;
     height: auto;
