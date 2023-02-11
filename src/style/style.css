@@ -1,25 +1,24 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-}
-body{
-  font-size: 62.5%;  
-  background-color: rgb(211, 210, 210);
-}
-.img{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.backgroundfirst{
+
+.backgroundabout{
     background-image: url(../img/job1.jpeg);
     width: 100%;
     height: 300px;
     background-size: 150%;
     position: relative;
     animation: imgfirst 25s infinite alternate ease-in-out;
+}
+.cta1{
+    background-color: gold;
+    border-radius: 12px;
+    border:2px groove black;
+    padding: 5px;
+    position: absolute;
+    top: 250px;
+    color:  black;
+    font-weight: 900;
+    left: 10px;
+    text-shadow: black 1px 1px 5px;
+    box-shadow: black 3px 2px 7px ;
 }
 @keyframes imgfirst {
     0%{
@@ -59,93 +58,95 @@ body{
         background-image: url(../img/job11.jpeg);
     }
 }
-.backgroundfirst nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 15px;
-    background-color: rgba(0, 0, 0, 0.735);
-    height: 40px;
-    padding: 5px;
-}
-a{
-    text-decoration: none;
-    font-size: 1.4rem;
-    color: white;
-}
-.backgroundfirst nav .burger{
-    width: 30px;
-    height: 30px;
-    background-image: url(../img/iconos/menu_burger.png);
-}
-.backgroundfirst nav .logoimg{
-    width: 30px;
-    height: 30px;
-    background-image: url(../img/iconos/logo.png);
-    position: absolute;
-    top: 5px;
-    left: 15px;
-}
-.main--content-container{
-    width: 90%;
-    min-width: 318px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2px;
-}
-main .title{
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 1.7rem;
-    text-align: center;
-    font-family: 'Fredoka One', cursive;
-}
-main .content{
-    font-size: 1.1rem;
-    font-weight: 500;
-    line-height: 1.3rem;
-}
-.footermobile{
+.backgroundfirst{
+    background-image: url(../img/job1.jpeg);
     width: 100%;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.854);
-    display: grid;
-    grid-template-columns: 33.3% 33.4% 33.3%;
-    bottom: 0;
+    height: 200px;
+    background-size: 150%;
+    position: relative;
+    animation: deslice 10s infinite alternate ease-in-out;
+}
+@keyframes deslice {
+    from{
+     background-position: top;   
+     background-position: left;
+    }
+    to{
+        background-position: right;
+        background-position: bottom;
+    }
+}
+@media (min-width:425px) {
+    .backgroundfirst{
+        height: 300px;
+    }
+}
+.backgroundfirst .question{
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: black 2px 1px 3px;
+    width: 250px;
+    bottom: 10px;
+    left: 5px;
+    position:absolute;
+}
+
+.main--posts-container{
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 10px 0px;
+}
+.main--posts-container .posts--content-container{
+    width: 90%;
+    height: auto;
     margin: 0 auto;
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
 }
-.footermobile .cont1{
-    grid-column: 1/2;
-   
+.main--posts-container .posts--content-container .posts{
+    width: 100%;
+    height: 60px;
+    border:black 2px ridge;
+    border-radius: 10px;
+    background-color: #e5e5e570;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    position: relative;
 }
-.footermobile .cont1 .option1{
+.posts .postuser{
     width: 40px;
     height: 40px;
-    background-image: url(../img/iconos/lupa.png);
-    margin: 3px  auto;
+    background-image: url(../img/iconos/perfil.png);
     display: block;
 }
-.footermobile .cont2{
-    border: 2px solid white;
-    border-top-width:0px ;
-    border-bottom-width:0px ;
-    grid-column:2/3 ;
-}
-.footermobile .cont2 .option2{
-    width: 40px;
-    height: 40px;
-    background-image: url(../img/iconos/set.png);
-    margin: 3px auto;
+.posts .more{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/iconos/more.png);
     display: block;
+    position: absolute;
+    right: 10px;
 }
-.footermobile .cont3{
-    grid-column:3/4 ;
+.star-container{
+    width: 50px;
+    bottom: -2px;
+    margin: 0px 3px;
+    position: absolute;
 }
-.footermobile .cont3 .option3{
-    width: 40px;
-    height: 40px;
-    background-image: url(../img/iconos/sms.png);
-    margin: 3px auto;
-    display: block;
+.checked{
+    color: gold;
+    text-shadow: black 2px 0px 1px;
+}
+.star{
+    display: inline;
+    font-size: .7rem;
+}
+.star:hover{
+ color: black;
 }

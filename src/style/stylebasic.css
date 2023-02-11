@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+  font-size: 62.5%;
+}
+.img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.735);
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    position: fixed;
+    z-index: 3;
+}
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+}
+main{
+    padding: 10px 0px 10px 0px;
+    background-color: black;
+}
+ nav .burger{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/iconos/menu_burger.png);
+}
+ nav .logoimg{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/iconos/logo.png);
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+.main--content-container{
+    width: 90%;
+    min-width: 318px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2px;
+}
+body .title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+body .content{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+.footermobile{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.854);
+    display: grid;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+    bottom: 0;
+    margin: 0 auto;
+    position: fixed;
+}
+.footermobile .cont1{
+    grid-column: 1/2;
+   
+}
+.footermobile .cont1 .option1{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/iconos/lupa.png);
+    margin: 3px  auto;
+    display: block;
+}
+.footermobile .cont2{
+    border: 2px solid white;
+    border-top-width:0px ;
+    border-bottom-width:0px ;
+    grid-column:2/3 ;
+}
+.footermobile .cont2 .option2{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/iconos/set.png);
+    margin: 3px auto;
+    display: block;
+}
+.footermobile .cont3{
+    grid-column:3/4 ;
+}
+.footermobile .cont3 .option3{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/iconos/sms.png);
+    margin: 3px auto;
+    display: block;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 15px;
+}
+.loader{
+    border: 6px double rgb(17, 17, 17);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: goldenrod;
+    animation: girar 1.3s linear infinite;
+    margin: 0 auto;
+}
+@keyframes girar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
