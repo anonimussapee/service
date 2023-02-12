@@ -58,16 +58,25 @@
         background-image: url(../img/job11.jpeg);
     }
 }
-.backgroundfirst{
+header{
     width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-top: 45px;
+}
+.backgroundfirst{
+    width: 90%;
     height: 200px;
-    padding-top: 50px;
+    padding-top: 30px;
     /* background-color:black; */
     background-image: url(../img/job5.jpg);
     background-position: center;
-    background-size: 150%;
+    background-size: 120%;
     background-repeat: repeat-x;
     animation: deslizar 5s infinite linear alternate;
+    border-radius: 20px;
 }
 @keyframes deslizar {
     from{
@@ -125,17 +134,29 @@
     height: auto;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    gap: 1px;
+    flex-direction: row;
+    gap: 3px;
+    overflow-y: scroll;
+    position: relative;
+
+}
+.main--posts-container .posts--content-container::-webkit-scrollbar{
+    display: none;
+    scrollbar-color: white;
+    height: 5px;
 }
 .main--posts-container .posts--content-container .posts{
-    width: 100%;
-    height: 60px;
-    border:black 2px ridge;
+   width: auto;
+   height: auto;
+}
+.main--posts-container .posts--content-container .posts .box-post{
+    width: 200px;
+    height: 150px;
+    border:rgba(5, 119, 176, 0.781) 2px ridge;
     border-radius: 10px;
-    background-color: #e5e5e570;
+    background-color: #fcfeffb4;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 5px;
     gap: 5px;
@@ -144,7 +165,8 @@
 .posts .postuser{
     width: 40px;
     height: 40px;
-    background-image: url(../img/iconos/perfil.png);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo5_4sR4FlfDF1OcqE_QpgeUt3OzbtOFVCYw&usqp=CAU);
+    border-radius: 50%;
     display: block;
 }
 .posts .more{
@@ -171,4 +193,20 @@
 }
 .star:hover{
  color: black;
+}
+@media (min-width:700px) {
+    .backgroundfirst{
+        height: 300px;
+        padding-top: 90px;
+        background-size: cover;
+    }
+    .header--introduce .title{
+        font-size: 2rem;
+    }
+    .header--introduce .content{
+        font-size: 1.7rem;
+    }
+    .main--posts-container .posts--content-container .posts .box-post{
+        width: 400px;
+    }
 }
