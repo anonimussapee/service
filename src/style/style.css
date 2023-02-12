@@ -142,13 +142,16 @@ header{
     scroll-snap-type: x proximity;
 }
 .main--posts-container .posts--content-container::-webkit-scrollbar{
-    appearance: none;
+    -webkit-appearance: none;
     position: relative;
    }
    .main--posts-container .posts--content-container::-webkit-scrollbar-thumb{
        background-color: gray;
        border-radius: 20px;
    }
+   .main--posts-container .posts--content-container::horizontal{
+    height: 10px;
+}
 .main--posts-container .posts--content-container .posts{
    width: auto;
    height: auto;
