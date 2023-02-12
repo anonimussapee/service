@@ -136,18 +136,23 @@ header{
     display: flex;
     flex-direction: row;
     gap: 3px;
-    overflow-y: scroll;
+    overflow-x: scroll;
     position: relative;
-
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 .main--posts-container .posts--content-container::-webkit-scrollbar{
-    display: none;
-    scrollbar-color: white;
-    height: 5px;
-}
+    appearance: none;
+    position: relative;
+   }
+   .main--posts-container .posts--content-container::-webkit-scrollbar-thumb{
+       background-color: gray;
+       border-radius: 20px;
+   }
 .main--posts-container .posts--content-container .posts{
    width: auto;
    height: auto;
+   scroll-snap-align: center;
 }
 .main--posts-container .posts--content-container .posts .box-post{
     width: 200px;
