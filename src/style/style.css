@@ -96,19 +96,18 @@ header{
 }
 .backgroundfirst .header--introduce .title, .backgroundfirst .header--introduce .content{
     color:  white;
-    text-shadow: black 2px 2px 2px , black -2px -2px 2px;
+    text-shadow: black 1px 1px 2px , black -1px -1px 2px;
     text-align: left;
     padding-bottom: 20px;
-}
-.backgroundfirst .header--introduce .content{
-    font-size: 1.2rem;
+    font-weight: 900;
+    font-size: 1.3rem;
 }
 .backgroundfirst .header--introduce form{
     width: 100%;
     display: flex;
     flex-wrap:wrap ;
     justify-content: right;
-    gap: 5px;
+    gap: 10px;
 }
 .backgroundfirst .header--introduce form input{
     font-size: 1rem;
@@ -173,9 +172,14 @@ header{
 .posts .postuser{
     width: 40px;
     height: 40px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo5_4sR4FlfDF1OcqE_QpgeUt3OzbtOFVCYw&usqp=CAU);
     border-radius: 50%;
     display: block;
+}
+.age{
+    font-weight: 800;
+    /* text-shadow: white 1px 1px 2px, white -1px -1px 2px; */
+    color: rgb(7, 65, 225);
+    text-align: center;
 }
 .posts .more{
     width: 20px;
