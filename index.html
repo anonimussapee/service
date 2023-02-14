@@ -13,7 +13,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 <link rel="icon" href="./src/img/iconos/lupa.png">
-<script src="./src/assets/index.js" defer></script>
+<script src="./src/assets/index.js" defer type="module"></script>
+<script src="./src/assets/functions.js" defer type="module"></script>
 </head>
 <body>
     <h1 style="visibility: hidden; position: absolute;">Buscas alguien para un trabajo en especial</h1>
@@ -24,12 +25,22 @@
             <p class="title">Hola Usuario..</p>
             <p class="content">Contrata o obtén empleo </p>
             <form action="#">
-                <input type="email" placeholder="Ingresa tú correo electronico" >
+                <input type="email" placeholder="Ingresa tú correo electronico">
                 <input type="button" value="Registrar">
             </form>
         </div>
         </div>
-       
+       <div class="slide--menu-burger">
+        <span class="close-menu img"></span>
+        <div class="search-form">
+            <input type="text" placeholder="buscar" class="search-box"><span class="lupa img"></span>
+        </div>
+        <a href="#">Ofertas de Empleo</a>
+        <a href="#">Filtrar por ubicación</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Visión y misión</a>
+        <a href="#">términos y condiciones</a>
+       </div>
     </header>
     <main>
        <section class="main--posts-container">

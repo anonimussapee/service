@@ -206,6 +206,53 @@ header{
 .star:hover{
  color: black;
 }
+header .slide--menu-burger{
+    width: 300px;
+    height: 100%;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    position: fixed;
+    z-index: 3;
+    background-color: gray;
+    padding: 70px 10px 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border: double rgba(255, 255, 255, 0.72) 6px;
+    border-right:transparent ;
+    border-bottom: transparent;
+}
+header .slide--menu-burger a{
+    background-color: rgb(36, 36, 36);
+    padding: 10px;
+}
+header .slide--menu-burger .close-menu{
+    background-image: url(../img/iconos/close.png);
+    width: 35px;
+    height: 35px;
+    border-radius: 9px;
+    background-size: 121%;
+    position: absolute;
+    top: 20px;
+
+}
+header .slide--menu-burger .close-menu:hover{
+    background-color: rgba(255, 255, 255, 0.39);
+}
+ body .search-form input{
+    font-size: 1.2rem;
+    width: 90%;
+ }
+ body .search-form .lupa{
+    width: 20px;
+    height: 19px;
+    margin-left: 5px;
+    top: 20px;
+    background-image: url(../img/iconos/lupa.png);
+    display: inline-block;
+    transform: rotateY(180deg);
+ }
 @media (min-width:700px) {
     .backgroundfirst{
         height: 300px;
