@@ -1,13 +1,4 @@
-const users=[{"name":"Juan Francisco Farre","edad":18,"ubicacion":"Otavalo","clasificacion":"Músicos y artistas","genero":"chicha","skill":"cantante","img":"https://i.eldiario.com.ec/fotos-manabi-ecuador/2014/03/20140327040000_ecuador-tendra-su-primer-festival-d_tn0.jpg","descripcion":"soy cantante de chicha una mezcla de cumbia con salsa, un melodioso ritmo que pone a bailar a propios y extraños"},/*cantantes*/
-{"name":"Mauricio Tena","edad":24,"ubicacion":"Cotacachi","clasificacion":"Músicos y artistas","genero":"chicha","skill":"cantante","img":"https://www.vistazo.com/binrepository/600x448/1c-77/600d600/none/12727/WNLD/jaime-enrique-aymara-juicio_226386_20211101172826.jpg","descripcion":"soy cantante de chicha una mezcla de cumbia con salsa, un melodioso ritmo que pone a bailar a propios y extraños"},/*cantantes*/
-{"name":"Laureano Matas","edad":20,"ubicacion":"Ibarra","clasificacion":"Músicos y artistas","genero":"Urbano","skill":"cantante","img":"https://www.lafactoriadelshow.com/pujaes/avatars/fitxes/8197_xth.jpg?5c77add1","descripcion":"soy cantante de Regaeton urbano  un melodioso ritmo que pone a bailar a propios y extraños"},/*cantantes*/
-{"name":"Amadeo Heredia","edad":18,"ubicacion":"Otavalo","clasificacion":"Músicos y artistas","genero":"Urbano","skill":"cantante","img":"https://www.lafactoriadelshow.com/pujaes/avatars/fitxes/11290_xth.jpg?624fe9e5","descripcion":"soy cantante de Regaeton urbano , un melodioso ritmo que pone a bailar a propios y extraños"},/*cantantes*/
-{"name":"Felisa Olmos","edad":28,"ubicacion":"Atuntaqui","clasificacion":"Músicos y artistas","genero":"Cumbia","skill":"cantante","img":"https://cloudfront-us-east-1.images.arcpublishing.com/infobae/IMWOM554HVGJDPGEKPAA64YMUE.png","descripcion":"soy cantante de Cumbia, un melodioso ritmo que pone a bailar a propios y extraños"},/*cantantes*/
-{"name":"Saida Sanchez","edad":22,"ubicacion":"Otavalo","clasificacion":"Músicos y artistas","genero":"Urbano","skill":"cantante","img":"https://www.lafactoriadelshow.com/blog/wp-content/uploads/2022/05/becky-g-.jpg","descripcion":"soy cantante de Regaeton urbano, un melodioso ritmo que pone a bailar a propios y extraños"},/*cantantes*/
-{"name":"Jose Alejandro Santos","edad":38,"ubicacion":"Quito","clasificacion":"Músicos y artistas","genero":"Vallenato","skill":"cantante","img":"https://cdn.colombia.com/sdi/2015/12/01/49d914aa15a04134bf96bbb54ef757ed.jpg","descripcion":"soy cantante de Vallenatos, un melodioso ritmo que pone a bailar a propios y extraños"},/*cantantes*/
-{"name":"Sheila Saiz","edad":18,"ubicacion":"Ibarra","clasificacion":"Músicos y artistas","genero":"Cumbia","skill":"Pianista","img":"https://www.analisisdigital.com.ar/sites/default/files/styles/noticias_front_desktop/public/imagenNoticiaDigital/311707058_435846385325642_6205364791243686368_n_0.jpg?itok=A1JtC7L4","descripcion":"soy Pianista de cumbia con salsa, un melodioso ritmo que pone a bailar a propios y extraños"},/*cantantes*/
-{"name":"Sebastian Gonzales","edad":25,"ubicacion":"Pimanpiro","clasificacion":"Músicos y artistas","genero":"salsa","skill":"cantante","img":"https://www.informador.mx/__export/1506078635884/sites/elinformador/img/historico/14/1180082.jpg_1902800913.jpg","descripcion":"soy cantante de salsa, un melodioso ritmo que pone a bailar a propios y extraños"},/*cantantes*/
-{"name":"Miguel Angel Lorenzo","edad":24,"ubicacion":"Santo Domingo","clasificacion":"Músicos y artistas","genero":"Merengue","skill":"cantante","img":"https://www.nodalcultura.am/wp-content/uploads/2020/01/Sergio-Vargas.jpg","descripcion":"soy cantante de Merengue, un melodioso ritmo que pone a bailar a propios y extraños"},/*niñeras*/
+const users=[/*niñeras*/
 {"name":"Sagrario Revilla","edad":28,"ubicacion":"Otavalo","clasificacion":"Cuidado de niños","img":"https://static.dw.com/image/57482198_401.jpg","descripcion":"soy una buena cuidadora de niños de buena presencia con experiencia"},/*niñeras*/
 {"name":"Nadia Solano","edad":24,"ubicacion":"Cotacachi","clasificacion":"Cuidado de niños","img":"https://statics-cuidateplus.marca.com/cms/styles/ratio_43/azblob/mujer-feliz_0.jpg.webp?itok=zZbjzJcq","descripcion":"soy una buena cuidadora de niños de buena presencia con experiencia"},/*niñeras*/
 {"name":"Maria Sonia Echevarria","edad":18,"ubicacion":"Ibarra","clasificacion":"Cuidado de niños","img":"https://www.vistazo.com/binrepository/400x337/0c56/400d225/none/12727/KMNG/foto_-16_1_VI54256_MG1722641.jpg","descripcion":"soy una buena cuidadora de niños de buena presencia con experiencia"},/*niñeras*/
@@ -74,7 +65,6 @@ var categories=users.map(item=>{
 });
 var usercategories=[...new Set(categories)];
 usercategories=usercategories.sort();
-console.log("categories"+usercategories);
 var view=``;
 var type=[];
 for(let i=0;i<usercategories.length;i++){
@@ -86,7 +76,7 @@ for(let i=0;i<usercategories.length;i++){
         <p class="star checked">★</p>
         <p class="star checked">★</p>
         <p class="star">★</p>
-        </div></span><div class="skill-name"><p class="content">${item.clasificacion}</p><p class="content">${item.name}</p><p class="content age">${item.edad} Años</p></div><span class="more img"></span></div>
+        </div></span><div class="skill-name"><p class="content">${item.name}</p><p class="content age">${item.edad} Años</p><p class="content">${item.ubicacion}</p></div><span class="more img"></span></div>
     </article>`;
     }
     });

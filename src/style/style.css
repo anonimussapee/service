@@ -140,20 +140,22 @@ header{
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
-.main--posts-container .posts--content-container::-webkit-scrollbar{
+.main--posts-container .posts--content-container::-webkit-scrollbar, .list-search::-webkit-scrollbar{
     -webkit-appearance: none;
     position: relative;
    }
-   .main--posts-container .posts--content-container::-webkit-scrollbar-thumb{
+   .main--posts-container .posts--content-container::-webkit-scrollbar-thumb, .list-search::-webkit-scrollbar-thumb{
        background-color: gray;
        border-radius: 20px;
+       border:  1px black solid;
    }
-   .main--posts-container .posts--content-container::horizontal{
+   .main--posts-container .posts--content-container::horizontal, .list-search::horizontal{
     height: 10px;
 }
 .main--posts-container .posts--content-container .posts{
    width: auto;
    height: auto;
+   text-align: center;
    scroll-snap-align: center;
 }
 .main--posts-container .posts--content-container .posts .box-post{
@@ -253,6 +255,54 @@ header .slide--menu-burger .close-menu:hover{
     display: inline-block;
     transform: rotateY(180deg);
  }
+ .list-search{
+    width: 93%;
+    height: auto;
+    min-height: 200px;
+    max-height: 80%;
+    top: 100px;
+    margin:  0 auto;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 3;
+    gap:3px;
+ }
+.slide--menu-burger .list-search .posts.list .box-post{
+    background-color: #fcfeff;
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    gap:15px;
+    padding: 5px;
+    text-align: center;
+}
+.slide--menu-burger .list-search .posts.list .box-post .star-container{
+    position: absolute ;
+    
+    left: 0;
+    bottom: 0;
+}
+.slide--menu-burger .list-search .posts.list .more{
+    width: 20px;
+    height: 20px;
+    background-image: none;
+    position: absolute;
+    border-radius: 50%;
+    right: 10px;
+    animation:on .5s infinite linear alternate;
+}
+@keyframes on {
+    from{
+        background-color: rgb(13, 232, 13);
+        border: 1px solid black;
+    }
+    to{
+        background-color: rgb(0, 180, 251);
+        border: 4px double black  ;
+    }
+}
 @media (min-width:700px) {
     .backgroundfirst{
         height: 300px;
