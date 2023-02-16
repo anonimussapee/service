@@ -73,7 +73,7 @@ header{
     /* background-color:black; */
     background-image: url(../img/job5.jpg);
     background-position: center;
-    background-size: 120%;
+    background-size: 110%;
     background-repeat: repeat-x;
     animation: deslizar 5s infinite linear alternate;
     border-radius: 20px;
@@ -127,6 +127,9 @@ header{
     width: 100%;
     height: auto;
     padding: 0px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
 .main--posts-container .posts--content-container{
     width: 90%;
@@ -193,8 +196,8 @@ header{
 }
 .star-container{
     width: 50px;
-    bottom: -2px;
-    margin: 0px 3px;
+    top: 115px;
+    left: calc(50% - 25px);
     position: absolute;
 }
 .checked{
@@ -314,8 +317,5 @@ header .slide--menu-burger .close-menu:hover{
     }
     .header--introduce .content{
         font-size: 1.7rem;
-    }
-    .main--posts-container .posts--content-container .posts .box-post{
-        width: 400px;
     }
 }

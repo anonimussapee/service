@@ -30,10 +30,11 @@ search.addEventListener("keyup", ()=>{
         <p class="star checked">★</p>
         <p class="star checked">★</p>
         <p class="star">★</p>
-        </div></span><div class="skill-name"><p class="content">${listview[i].clasificacion}</p><p class="content">${listview[i].name}</p><p class="content age">${listview[i].edad} Años</p></div><span class="more img"></span></div>
+        </div></span><div class="skill-name"><p class="content">${listview[i].clasificacion}</p><p class="content">${listview[i].name}</p><p class="content age">${listview[i].edad} Años</p></div></div>
         </article>`;
 list_search.innerHTML=viewlist;}
    
     }
 
 });
+
