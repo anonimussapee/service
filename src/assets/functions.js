@@ -14,6 +14,7 @@ var search=document.querySelector(".search-box");
 search.addEventListener("keyup", ()=>{
     let viewlist=``;
     var listview;
+    a[0].shift();
     listview=a[0].filter(item=>{
         let namee=item.name.toLowerCase();
         return namee.includes(search.value.toLowerCase());});
