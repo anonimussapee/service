@@ -81,7 +81,7 @@ body .content{
     height: 50px;
     background-color: rgba(0, 0, 0, 0.854);
     display: grid;
-    grid-template-columns: 33.3% 33.4% 33.3%;
+    grid-template-columns: 25% 25% 25% 25%;
     bottom: 0;
     margin: 0 auto;
     position: fixed;
@@ -93,7 +93,7 @@ body .content{
 .footermobile .cont1 .option1{
     width: 40px;
     height: 40px;
-    background-image: url(../img/iconos/lupa.png);
+    background-image: url(../img/iconos/home.png);
     margin: 3px  auto;
     display: block;
 }
@@ -106,7 +106,7 @@ body .content{
 .footermobile .cont2 .option2{
     width: 40px;
     height: 40px;
-    background-image: url(../img/iconos/video.png);
+    background-image: url(../img/iconos/lupa.png);
     margin: 3px auto;
     display: block;
 }
@@ -114,6 +114,18 @@ body .content{
     grid-column:3/4 ;
 }
 .footermobile .cont3 .option3{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/iconos/video.png);
+    margin: 3px auto;
+    display: block;
+}
+.footermobile .cont4{
+    grid-column:4/5 ;
+    border: 2px solid;
+    border-color: transparent transparent transparent white;
+}
+.footermobile .cont4 .option4{
     width: 40px;
     height: 40px;
     background-image: url(../img/iconos/sms.png);

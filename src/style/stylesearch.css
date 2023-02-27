@@ -21,7 +21,6 @@ main .search--box-container form input[type="search"]{
 main .data--search-container{
     padding:20px 0px 20px ;
     width: 100%;
-    height: 500px;
     background-color: var(--grey-light);
 }
 main .data--search-container .data--card-container{
@@ -29,11 +28,106 @@ main .data--search-container .data--card-container{
     min-width: 288px;
     margin: 0 auto;
     display: flex;
+    gap: 10px;
     flex-direction: column;
+    height: auto;
+}
+main .data--search-container  .question.question.title{
+    padding-bottom: 10px;
     font-weight: 100;
     text-decoration:underline;
     color: var(--cyan-light);
 }
-.question.title{
-    padding-bottom: 10px;
+.data--search-container .data--card-container .posts.search{
+    width: 100%;
+    border: 3px solid;
+    border-color: black white white black;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+}
+.data--search-container .data--card-container .posts.search .box-post{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.data--search-container .data--card-container .posts.search .box-post .postuser.img{
+width: 80px;
+height: 80px;
+margin: 10px;
+grid-column: 1/2;
+}
+.data--search-container .data--card-container .posts.search .box-post .skill-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    grid-column: 2/3;
+}
+.data--search-container .data--card-container .posts.search .box-post .skill-name .content.skill{
+    background-color:goldenrod;
+    color: white;
+    border-radius: 5px;
+    align-self: center;
+    padding: 5px;
+    width: 150px;
+    font-weight: 900;
+}
+main .data--search-container .data--card-container .posts.search .star-container{
+    position: absolute;
+    top: 0;
+    right: -100px;
+    display: flex;
+    grid-column: 3/4;
+}
+main .data--search-container .data--card-container .posts.search .star-container .star{
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+}
+@media (min-width:320px) {
+    .data--search-container .data--card-container .posts.search .box-post{
+        display: grid;
+        grid-template-columns: 23% 53% 24%;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .data--search-container .data--card-container .posts.search .box-post .postuser.img{
+        width: 60px;
+        height: 60px;
+        margin: 10px 4px 10px;
+        grid-column: 1/2;
+        } 
+}
+@media (min-width:375px) {
+    .data--search-container .data--card-container .posts.search .box-post{
+        display: grid;
+        grid-template-columns: 25% 55% 20%;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .data--search-container .data--card-container .posts.search .box-post .postuser.img{
+        width: 70px;
+        height: 70px;
+        margin: 10px 4px 10px;
+        grid-column: 1/2;
+        } 
+}
+@media (min-width:425px) {
+    .data--search-container .data--card-container .posts.search .box-post{
+        display: grid;
+        grid-template-columns: 23% 60% 17%;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .data--search-container .data--card-container .posts.search .box-post .postuser.img{
+        width: 80px;
+        height: 80px;
+        margin: 10px 4px 10px;
+        grid-column: 1/2;
+        } 
 }

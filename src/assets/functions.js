@@ -13,7 +13,7 @@ var list_search=document.querySelector(".list-search");
 var search=document.querySelector(".search-box");
 search.addEventListener("keyup", ()=>{
     let viewlist=``;
-    var listview;
+    let listview;
     a[0].shift();
     listview=a[0].filter(item=>{
         let namee=item.name.toLowerCase();
@@ -38,11 +38,4 @@ list_search.innerHTML=viewlist;}
    
     }
 
-});
-var search_page_box=document.querySelector(".search--page");
-search_page_box.addEventListener('keyup',()=>{
-let value_search =search_page_box.value;
-console.log(value_search);
- let viewlist='';
- let list_find;
 });
