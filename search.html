@@ -4,33 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="necesitas de alguien que realice un trabajo en especial">
+    <meta name="description" content="buscador de personas que realicen un trabajo en especial">
     <meta name="robots" content="index, follow">
-    <title>todos los servicios en tu mano</title>
+    <title>buscador de trabajadores</title>
     <link rel="stylesheet" href="./src/style/stylebasic.css">
     <link rel="stylesheet" href="./src/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 <link rel="icon" href="./src/img/iconos/lupa.png">
+<link rel="stylesheet" href="./src/style/stylesearch.css">
 <script src="./src/assets/index.js" defer type="module"></script>
 <script src="./src/assets/functions.js" defer type="module"></script>
 <script src="./src/assets/functionclick.js" defer></script>
 </head>
 <body>
-    <h1 style="visibility: hidden; position: absolute;">Buscas alguien para un trabajo en especial</h1>
+    <h1 style="visibility: hidden; position: absolute;">persona, albañiles, musicos, niñeras cerca de mí.</h1>
     <header >
-        <div class="backgroundfirst">
+        <div class="backgroundfirst1">
              <nav><a href="./index.html" class="logo"><span class="logoimg img"></span></a><a href="#">Sobre nosotros</a><a href="#">Login</a><span class="burger img"></span></nav>
-        <div class="header--introduce">
-            <p class="title">Hola Usuario..</p>
-            <p class="content">Contrata u obtén empleo </p>
-            <form action="#">
-                <input type="email" placeholder="Ingresa tú correo electronico">
-                <input type="button" value="Registrar">
-            </form>
-        </div>
-        </div>
+       
        <div class="slide--menu-burger">
         <span class="close-menu img"></span>
         <div class="search-form">
@@ -46,13 +39,31 @@
        </div>
     </header>
     <main>
-       <section class="main--posts-container">
-        
+        <section class="search--box-container">
+            <form action="#">
+                <input class="search--page" type="search" placeholder="buscar...">
+                <input type="button" value="buscar">
+            </form>
+        </section>
+
+       <section class="main--posts-container" style="visibility: hidden; height: 0px;">
        </section>
-       <div class="loader">
-       </div>
+       <section class="data--search-container">
+        <div class="data--card-container">
+                <p class="question title">Agricultores</p>
+                <p class="question title">Cocineros o chefs</p>
+                <p class="question title">Jugadores</p>
+                <p class="question title">Diseñadores</p>
+                <p class="question title">Fotografo</p>
+                <p class="question title">Niñeras</p>
+                <p class="question title">Modelos</p>
+                <p class="question title">Estilistas</p>
+        </div>
+        <div class="loader">
+        </div>
+       </section>
+       
     </main>
-   
     <div class="footermobile"><span class="cont1" ><a href="./search.html"><span class="option1 img"></span></a></span><span class="cont2" ><a href="./rels.html"><span class="option2 img"></span></a></span><span class="cont3"><a href="./chat.html"><span class="option3 img"></span></a></span></div>
     <footer>
         <section class="footer--content1"><address class="content footer">©JobSite</address><address class="content footer">contacta con nosotros</address></section>

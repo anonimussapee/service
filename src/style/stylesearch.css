@@ -1,0 +1,39 @@
+main .search--box-container{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+main .search--box-container form{
+width: 90%;
+margin:0 auto;
+font-size: 1.9rem;
+display: flex;
+justify-content: center;
+}
+main .search--box-container form input[type="button"]{
+    font-size: 1.0rem;
+}
+main .search--box-container form input[type="search"]{
+   font-size: 1.0rem;
+   padding: 2px;
+}
+main .data--search-container{
+    padding:20px 0px 20px ;
+    width: 100%;
+    height: 500px;
+    background-color: var(--grey-light);
+}
+main .data--search-container .data--card-container{
+    width: 90%;
+    min-width: 288px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    text-decoration:underline;
+    color: var(--cyan-light);
+}
+.question.title{
+    padding-bottom: 10px;
+}

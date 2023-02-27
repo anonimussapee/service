@@ -27,7 +27,8 @@ search.addEventListener("keyup", ()=>{
         list_search.innerHTML=``;
     }else{ for (var i=0;i<listview.length;i++) {
         viewlist+=`<article class="posts list">
-        <div class="box-post"><span class="postuser img" style="background-image:url(${listview[i].img});"><div class="star-container">
+        <div class="box-post"><span class="more"></span>
+        <span class="postuser img" style="background-image:url(${listview[i].img});"><div class="star-container">
         <p class="star checked">★</p>
         <p class="star checked">★</p>
         <p class="star">★</p>
@@ -38,4 +39,10 @@ list_search.innerHTML=viewlist;}
     }
 
 });
-
+var search_page_box=document.querySelector(".search--page");
+search_page_box.addEventListener('keyup',()=>{
+let value_search =search_page_box.value;
+console.log(value_search);
+ let viewlist='';
+ let list_find;
+});

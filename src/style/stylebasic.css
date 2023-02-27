@@ -1,3 +1,7 @@
+:root{
+    --grey-light:rgb(198, 196, 196);
+    --cyan-light:rgb(12, 147, 185);
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -102,7 +106,7 @@ body .content{
 .footermobile .cont2 .option2{
     width: 40px;
     height: 40px;
-    background-image: url(../img/iconos/set.png);
+    background-image: url(../img/iconos/video.png);
     margin: 3px auto;
     display: block;
 }
@@ -130,7 +134,10 @@ footer{
     border-radius: 50%;
     border-left-color: goldenrod;
     animation: girar 1.3s linear infinite;
-    margin: 0 auto;
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    left: calc(50% - 18px);
 }
 @keyframes girar {
     from{

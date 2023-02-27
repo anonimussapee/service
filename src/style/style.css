@@ -70,7 +70,6 @@ header{
     width: 90%;
     height: 200px;
     padding-top: 30px;
-    /* background-color:black; */
     background-image: url(../img/job5.jpg);
     background-position: center;
     background-size: 110%;
@@ -161,8 +160,9 @@ header{
    text-align: center;
    scroll-snap-align: center;
 }
+/*cajas con los user post*/
 .main--posts-container .posts--content-container .posts .box-post{
-    width: 200px;
+    width: 270px;
     height: 150px;
     border:rgba(5, 119, 176, 0.781) 2px ridge;
     border-radius: 10px;
@@ -249,14 +249,15 @@ header .slide--menu-burger .close-menu:hover{
     font-size: 1.2rem;
     width: 90%;
  }
- body .search-form .lupa{
-    width: 20px;
-    height: 19px;
-    margin-left: 5px;
-    top: 20px;
-    background-image: url(../img/iconos/lupa.png);
-    display: inline-block;
+ body .lupa{
+    width: 30px;
+    height:26px;
+    background-color: rgb(0, 179, 255);
+    background-size: 70%;
+    background-image: url(../img/iconos/lupa.svg);
     transform: rotateY(180deg);
+    position: absolute;
+    border-radius: 3px;
  }
  .list-search{
     width: 93%;
@@ -285,7 +286,7 @@ header .slide--menu-burger .close-menu:hover{
     position: absolute ;
     
     left: 0;
-    bottom: 0;
+    top: 50px;
 }
 .slide--menu-burger .list-search .posts.list .more{
     width: 20px;
@@ -294,16 +295,18 @@ header .slide--menu-burger .close-menu:hover{
     position: absolute;
     border-radius: 50%;
     right: 10px;
-    animation:on .5s infinite linear alternate;
+    top: 10px;
+    animation:on .8s infinite linear alternate;
 }
+
 @keyframes on {
     from{
-        background-color: rgb(13, 232, 13);
+        background-color: rgb(4, 248, 4);
         border: 1px solid black;
     }
     to{
         background-color: rgb(0, 180, 251);
-        border: 4px double black  ;
+        border: 8px double black  ;
     }
 }
 @media (min-width:700px) {
