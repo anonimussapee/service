@@ -18,7 +18,6 @@ search.addEventListener("keyup", ()=>{
     listview=a[0].filter(item=>{
         let namee=item.name.toLowerCase();
         return namee.includes(search.value.toLowerCase());});
-    console.log(listview);
     if(listview.length==0){
         list_search.innerHTML=`<article class="posts list">
         <div class="box-post""><p class="content">No hay resultados</p></div>
